@@ -1,0 +1,66 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    height: 100%;
+}
+/* --- Navigation --- */
+.navigation {
+    width: 100%;
+    height: 5%;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: #333333;
+    justify-content: flex-start;
+    align-items: center;
+}
+.navhome {
+    width: 20%;
+    float: left;
+    margin-left: 5%;
+}
+.navhome a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+}
+.navrest {
+    width: 80%;
+    float: right;
+    margin-right: 5%;
+}
+.navrest a {
+    float: right;
+    padding: 10px 15px;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+/* --- MAIN --- */
+.bg {
+    width: 100%;
+    height: 95%;
+    background-image: url("../Billeder/billede.png");
+    background-position: center;
+    background-origin: border-box;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+}
+.join {
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    margin-top: -10%;
+    background-color: #333333;
+    color: white;
+    padding: 24px 56px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+}
