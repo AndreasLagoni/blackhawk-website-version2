@@ -6,6 +6,12 @@ body {
     width: 100%;
     height: 100%;
 }
+h1 {
+    font-family: 'Oswald', sans-serif;
+}
+p, a, button {
+    font-family: 'Noto Serif', serif;
+}
 /* --- Navigation --- */
 .navigation {
     width: 100%;
@@ -43,24 +49,54 @@ body {
 .bg {
     width: 100%;
     height: 95%;
-    background-image: url("../Billeder/billede.png");
+    background-image: url("../Billeder/baggrund.jpg");
     background-position: center;
     background-origin: border-box;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 0.6;
+    opacity: 0.8;
 }
-.join {
-    display: block;
+.insidebg {
+    width: 40%;
+    height: auto;
     position: relative;
     margin: 0 auto;
-    margin-top: -10%;
-    background-color: #AA3523;
+    background-color: #033E4F;
+    text-align: center;
+    padding: 14px 16px;
+    margin-top: -350px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.insidebg h1, p {
     color: white;
-    padding: 24px 56px;
+    margin: 10px 0px;
+}
+.insidebg p {
+    font-size: 17px;
+}
+.join {
+    background-color: #005E1C;
+    color: white;
+    padding: 10px 50px;
     border-radius: 40px;
     font-size: 20px;
     border: 0;
     cursor: pointer;
     text-align: center;
+    transition: background-color 0.5s;
+}
+.join:hover {
+    background-color: #7F1100;
+}
+
+/* --- SCALING --- */
+
+@media screen and (max-width: 800px) {
+    .insidebg {
+        width: 85%;
+    }
 }
