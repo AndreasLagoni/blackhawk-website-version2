@@ -1,0 +1,121 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blackhawk</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS Fil/maincss.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oswald" rel="stylesheet">
+
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navhome">
+                <a href="index.html" id="home"><li>BLACK<span style="color: #A72915">HAWK</span></li></a>
+            </div>
+            <div class="navrest">
+            <a href="about.html" id="about"><li>About</li></a>
+            <a href="leaderboard.html" id="leaderboard"><li>Leaderboard</li></a>
+            <a href="#" id="faq"><li>FAQ</li></a>
+            </div>
+        </nav>
+        <div class="bg">
+            <main class="insidebgfaq">
+                <div class="faqcontent">
+                    <h1>FAQ SECTION:</h1>
+                    <button class="collapsible active">Q: What are the rules</button>
+                    <div class="content">
+                      <p>A: We want to create the perfect Rust world, where one wipe is connected to all the other wipes in a way that you can recap overall stats and scores.
+                         Our goal is to be the most prestigious Rust server out there. Featuring new content often and listening to the community. We wish to show alot of features
+                         but at the same time keep the Rust experience impactful and not change too much.  
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: What do we do here?</button>
+                    <div class="content">
+                      <p>A: We want to create the perfect Rust world, where one wipe is connected to all the other wipes in a way that you can recap overall stats and scores.
+                         Our goal is to be the most prestigious Rust server out there. Featuring new content often and listening to the community. We wish to show alot of features
+                         but at the same time keep the Rust experience impactful and not change too much.  
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: What is the score based on?</button>
+                    <div class="content">
+                      <p>A: In the beginning the score will be based on the number of kills aquired by the players. This will most likely change in the future since being very good at pvp is not the only factor
+                          of skill displayed in Rust. Therefore any suggestions on how the score should be handled would be much appreciated. We have alot of ideas and hopefully you will enjoy them!
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: Will I meet admins in the server?</button>
+                    <div class="content">
+                      <p>Admins will most likely be online alot of the times, but you will never see them visible unless it's neccessary. We are very strong and strict when it comes to giving the players on our server
+                          the best experience and as admins we would never destroy that experience with any abuse or trolling. 
+                          <br>Buttom line is: ADMIN DO NOT PLAY ACTIVELY ON THE SERVER!
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: How many friends can I play with?</button>
+                    <div class="content">
+                      <p>A: We will start off the server with no restrictions as to the # of players on a team. We wish to see how this pans out. This may change in the future.
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: I wish to contact an admin, how can i do that?</button>
+                    <div class="content">
+                      <p>A: Very simply write to us on <a href="https://discord.gg/g28Xks" target="_blank">Discord</a>. We are active ALOT so contacting us shouldn't ever be a problem!
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: What features are you currently working on?</button>
+                    <div class="content">
+                      <p>A: We are currently working on following features:
+                          <br>- Ranking/title system - ex. name: <br> <span style="color: rgb(184, 58, 184);">[WEEK 1 CHAMP]</span> Lagoni
+                          <br>- Updating our score parameters (Currently: # of kills)
+                          <br>- Redesign website
+                          <br>- Giveaway / Contests / Events
+                          <br>- Achievements on the server - Controlled / Viewed on website
+    
+                      </p>
+                    </div>
+                    <button class="collapsible">Q: What ingame commands is useable for me?</button>
+                    <div class="content">
+                      <p>A: <span style="font-style: italic;">Any of these commands can be used in the server chat.</span>
+    
+                            <br>Create ticket to report cheaters or just get in contact with an admin:
+                            <br><span class="faqspan">/ticket create "Reason for creating a ticket"</span>
+                            
+                            <br>Report a specific player to the admins, this only works if the user is in the server:
+                            <br><span class="faqspan">/report "name/id" "Reason for reporting player"</span>
+                            
+                            <br>Shows the discord link:
+                            <br><span class="faqspan">/discord</span>
+                            
+                            <br>Contact information if you are in need of an admin:
+                            <br><span class="faqspan">/admin</span>
+                      </p>
+                    </div>
+                    
+                    <script>
+                    var coll = document.getElementsByClassName("collapsible");
+                    var i;
+                    
+                    for (i = 0; i < coll.length; i++) {
+                      coll[i].addEventListener("click", function() {
+                        this.classList.toggle("active");
+                        var content = this.nextElementSibling;
+                        if (content.style.maxHeight){
+                          content.style.maxHeight = null;
+                        } else {
+                          content.style.maxHeight = content.scrollHeight + "px";
+                        } 
+                      });
+                    }
+                    </script>
+            </div>
+            </main>
+
+        </div>
+        
+        
+        <script src="" async defer></script>
+    </body>
+</html>
