@@ -23,7 +23,6 @@ function copyIpfunction() {
     /* Copy the text inside the text field */
     document.execCommand("copy");
   }
-  
 var socket = io();
 
 socket.on("connect", function() {

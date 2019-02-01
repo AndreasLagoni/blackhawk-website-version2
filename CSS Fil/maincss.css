@@ -178,7 +178,91 @@ p, button {
     color: white;
     padding: 10px 0px;
   }
+/* ABOUT STYLING */
+    .insidebgabout {
+        width: 55%;
+        height: auto;
+        position: relative;
+        top: 5%;
+        margin: 0 auto;
+        background-color: #105468;
+        padding: 14px 16px;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row;
+        border-radius: 10px;
+    }
+    .insidebgfaq h1, p {
+        color: white;
+        margin: 10px 0px;
+    }
+    .insidebgfaq p {
+        font-size: 17px;
+    }
+    .insidebgfaq a {
+        color: white;
+    }
+/* ------------ SERVER INFO ------------ */
+
+.serverinfo {
+    width: 50%;
+    height: 500px;
+    background-color: #1F6B81;
+    padding-left: 1em;
+  }
+  .serverinfo h2, p {
+    color: white;
+    padding: 4px 6px;
+  }
+  .serverinfo p {
+      font-size: 19px;
+  }
+  .serverinfo span {
+    font-weight: bold;
+    font-size: 19px;
+  }
+  #online {
+    color: rgb(0, 192, 0);
+    display: block;
+  }
+  #offline {
+    color: rgb(160, 0, 0);
+    display: none;
+  }
+  /* ------------ SERVER SOCIAL ------------ */
   
+  .serversocial {
+    width: 50%;
+    height: 500px;
+    background-color: #1F6B81;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .serversocial p {
+    font-size: 19px;
+  }
+  .serversocial h2 {
+    width: 100%;
+    height: 10%;
+    margin-top: 5%;
+    color: white;
+  }
+  .serversocial a , img{
+    width: 75px;
+    height: 75px;
+  }
+  .socialdiscord {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+  }
+  .socialtwitter {
+    width: 100%;
+    height: 40%;
+    text-align: center;
+  }
   /* COLLAPSE FAQ */
   .collapsible {
     background-color: #333333;
@@ -363,7 +447,14 @@ p, button {
     color: #bf6000;
   }
 /* --- SCALING --- */
-
+@media screen and (max-width: 1200px) {
+    .insidebgfaq {
+        width: 95%;
+    }
+    .insidebgabout {
+        width: 95%;
+    }
+}
 @media screen and (max-width: 800px) {
     .insidebg {
         width: 85%;
@@ -372,14 +463,25 @@ p, button {
         width: 100%;
         padding: 0;
     }
+    .insidebgabout {
+        flex-direction: column;
+    }
+    .serverinfo {
+        width: 100%;
+        padding: 0;
+    }
+    .serversocial {
+        width: 100%;
+    }
 }
 @media screen and (max-width: 600px) {
     .modal-content {
         width: 80%;
     }
 }
-@media screen and (max-width: 1200px) {
-    .insidebgfaq {
-        width: 95%;
+@media screen and (max-width: 450px) {
+    .navrest a {
+        padding: 5px 5px;
     }
 }
+
