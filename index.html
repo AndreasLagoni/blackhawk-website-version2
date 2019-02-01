@@ -11,7 +11,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS Fil/maincss.css">
         <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oswald" rel="stylesheet">
-
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
     </head>
     <body>
         <nav class="navigation">
@@ -32,10 +32,16 @@
                 something to fight for! Tired of the same old servers, same old stuff, try us out. 
                 But we must warn you... This server will get addicting!
             </p>
-            <button class="join">Join</button>
+            <button class="join" id="buttonModal">Join</button>
         </div></div>
+        <div class="indexmodal" id="indexModal">
+        <div class="modal-content">
+            <h1>Join our growing community!</h1>
+            <p>Below is the connect to our server - Which you enter after pressing F1 ingame!</p>
+            <input type="text" id="connectIp" value="connect 80.161.187.132:28015"><button onclick="copyIpfunction()"><i class="far fa-copy"></i></button>
+        </div>
+        </div>
         
-        
-        <script src="" async defer></script>
+        <script src="javascript.js"></script>
     </body>
 </html>

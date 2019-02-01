@@ -17,6 +17,7 @@ p, button {
 .navigation {
     width: 100%;
     height: 5%;
+    min-height: 37px;
     display: flex;
     flex-direction: row;
     list-style: none;
@@ -93,6 +94,51 @@ p, button {
 .join:hover {
     background-color: #7F1100;
 }
+  /* MODAL STYLING */
+/* The Modal (background) */
+.indexmodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition: display 1s ease-in;
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    background-color: #105468;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+    text-align: center;
+  }
+  .modal-content a, h1 {
+      color: white;
+  }
+  .modal-content input {
+      width: 290px;
+      padding: 2px 15px;
+      background-color: #7F1100;
+      margin-right: 10px;
+      font-size: 18px;
+      color: white;
+      border: 1px solid #219945;
+      text-align: center;
+  }
+  .modal-content button {
+      border: 0;
+      background: none;
+      color: white;
+      font-size: 20px;
+      cursor: pointer;
+  }
   /* FAQ */
   .insidebgfaq {
     width: 55%;
@@ -167,13 +213,13 @@ p, button {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
-    background-color: #105468;
+    background-color: #033E4F;
   }
   .rulescontent {
     padding: 0 18px;
     height: auto;
     overflow: hidden;
-    background-color: #105468;
+    background-color: #033E4F;
   }
   .faqcontent button {
     font-size: 20px;
@@ -218,11 +264,118 @@ p, button {
 .insidebgfaq p {
     font-size: 17px;
 }
+
+.leaderboard {
+    height: 700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #5A96A7;
+    padding: 0;
+    border-left: 1px solid white;
+  }
+  .leaderboardbutton {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: flex-start;
+    width: 100%;
+    height: 50px;
+  }
+  .leaderboard button {
+    width: 50%;
+    border-top: 0;
+    border-right: 0;
+    border-left: 0;
+    border-bottom: 0;
+    outline: none;
+    padding: 5px 5px;
+    background-color: #033E4F;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    font-size: 1em;
+  }
+  .leaderboardtextwrapper {
+    width: 95%;
+    height: 650px;
+    background-color: #033E4F;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+  .leaderboardtrophy {
+    width: 5%;
+    height: 650px;
+    display: flex;
+    flex-direction: column;
+  }
+  .leaderboardtext {
+    width: 100%;
+    height: 65px;
+    color: white;
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #033E4F;
+  }
+  .leaderboardtext h3 {
+    color: white;
+    font-size: 1em;
+    width: 98%;
+    margin-left: 2%;
+  }
+  .leaderboardtext p:not(.undername) {
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: 0%;
+  }
+  .leaderboardtext a {
+    color: white;
+    text-decoration: underline;
+  }
+  .undername {
+    color: white;
+    font-size: 0.7em;
+    text-align: center;
+    margin-left: 10px;
+  }
+  .fa-trophy {
+    align-self: center;
+    width: 100%;
+    height: 10%;
+    font-size: 20px;
+    text-align: center;
+  }
+  #gold {
+    margin-top: 20px;
+    color: gold;
+  }
+  #silver {
+    color: silver;
+  }
+  #bronze {
+    color: #bf6000;
+  }
 /* --- SCALING --- */
 
 @media screen and (max-width: 800px) {
     .insidebg {
         width: 85%;
+    }
+    .insidebgleaderboard {
+        width: 100%;
+        padding: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .modal-content {
+        width: 80%;
     }
 }
 @media screen and (max-width: 1200px) {
