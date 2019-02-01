@@ -79,7 +79,22 @@ p, button {
 .insidebg p {
     font-size: 17px;
 }
-.insidebgfaq {
+.join {
+    background-color: #107B30;
+    color: white;
+    padding: 10px 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    border: 0;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.5s;
+}
+.join:hover {
+    background-color: #7F1100;
+}
+  /* FAQ */
+  .insidebgfaq {
     width: 55%;
     height: auto;
     position: relative;
@@ -101,22 +116,9 @@ p, button {
 .insidebgfaq p {
     font-size: 17px;
 }
-.join {
-    background-color: #107B30;
+.insidebgfaq a {
     color: white;
-    padding: 10px 50px;
-    border-radius: 40px;
-    font-size: 20px;
-    border: 0;
-    cursor: pointer;
-    text-align: center;
-    transition: background-color 0.5s;
 }
-.join:hover {
-    background-color: #7F1100;
-}
-  /* FAQ */
-
 .faqcontent {
     width: 95%;
     height: auto;
@@ -149,11 +151,28 @@ p, button {
     padding: 16px;
     box-sizing: border-box;
   }
+  .rules {
+    background-color: rgb(83, 83, 83);
+    color: white;
+    cursor: pointer;
+    padding: 16px;
+    box-sizing: border-box;
+    width: 100%;
+    border: 2px solid #219945;
+    outline: none;
+    font-size: 15px;
+  }
   .content {
     padding: 0 18px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
+    background-color: #105468;
+  }
+  .rulescontent {
+    padding: 0 18px;
+    height: auto;
+    overflow: hidden;
     background-color: #105468;
   }
   .faqcontent button {
@@ -165,6 +184,10 @@ p, button {
     font-size: 19px;
     margin: 10px 0px;
   }
+  .rulescontent span {
+    font-size: 19px;
+    margin: 10px 0px;
+  }
   .faqspan {
     color: rgb(0, 80, 0);
     border: 1px solid gray;
@@ -172,6 +195,29 @@ p, button {
     padding: 2px 1px;
     background-color: lightgray;
   }
+/* LEADERBOARD STYLING */
+.insidebgleaderboard {
+    width: 55%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    background-color: #105468;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+.insidebgfaq h1, p {
+    color: white;
+    margin: 10px 0px;
+}
+.insidebgfaq p {
+    font-size: 17px;
+}
 /* --- SCALING --- */
 
 @media screen and (max-width: 800px) {
