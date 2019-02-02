@@ -139,6 +139,129 @@ p, button {
       font-size: 20px;
       cursor: pointer;
   }
+  /* ------------ ACHIEVEMENTS STYLING ------------ */
+  .insidebgachievements {
+    width: 55%;
+    height: auto;
+    position: relative;
+    top: 5%;
+    margin: 0 auto;
+    background-color: #105468;
+    padding: 14px 16px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: auto;
+    flex-wrap: nowrap;
+}
+.insidebgachievements h1, p {
+    color: white;
+    margin: 10px 0px;
+}
+.insidebgachievements p {
+    font-size: 17px;
+}
+.insidebgachievements a {
+    color: white;
+}
+.tierList button {
+    width: 25%;
+    border: 0;
+    padding: 7px 0px;
+    margin: 0;
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+    display: block;
+    float: left;
+}
+.tierList .tier1 {
+    background-color: #219945;
+}
+.tierList .tier2 {
+    background-color: #1F6B81;
+}
+.tierList .tier3 {
+    background-color: #CF422C;
+}
+.tierList .tierunique {
+    background-color: #CF7E2C;
+}
+.tierList .active {
+    border: 1px solid white;
+    box-sizing: border-box;
+    padding: 6px 0px;
+}
+.tierList button:focus {
+    outline: none;
+}
+.achievementList {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.achievementList .tier1 {
+    background-color: #219945;
+}
+.achievementList .tier2 {
+    background-color: #1F6B81;
+}
+.achievementList .tier3 {
+    background-color: #CF422C;
+}
+.achievementList .tierUnique {
+    background-color: #CF7E2C;
+}
+#achievementListTier2 {
+    display: none;
+}
+#achievementListTier3 {
+    display: none;
+}
+#achievementListTierUnique {
+    display: none;
+}
+.achievementItem {
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.achievementExpand button {
+    color: white;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    margin-left: 15px;
+}
+.achievementExpand button:focus {
+    outline: none;
+}
+.achievementExpand button i {
+    font-size: 2em;
+}
+.achievementName {
+    margin-right: 35%;
+    font-size: 1.5em;
+    color: white;
+}
+.achievementStatus {
+    color: white;
+}
+.achievementStatus i {
+    background-color: transparent;
+    display: none;
+    border: 0;
+    font-size: 1.5em;
+}
+.achievementStatus .active {
+    display: block;
+    
+}
+
   /* FAQ */
   .insidebgfaq {
     width: 55%;
@@ -186,10 +309,10 @@ p, button {
         top: 5%;
         margin: 0 auto;
         background-color: #105468;
-        padding: 14px 16px;
         display: flex;
         justify-content: flex-start;
         flex-direction: row;
+        flex-wrap: wrap;
         border-radius: 10px;
     }
     .insidebgfaq h1, p {
@@ -203,12 +326,12 @@ p, button {
         color: white;
     }
 /* ------------ SERVER INFO ------------ */
-
 .serverinfo {
-    width: 50%;
+    width: 49%;
     height: 500px;
     background-color: #1F6B81;
-    padding-left: 1em;
+    margin-left: 1%;
+    margin-top: 1em;
   }
   .serverinfo h2, p {
     color: white;
@@ -232,13 +355,14 @@ p, button {
   /* ------------ SERVER SOCIAL ------------ */
   
   .serversocial {
-    width: 50%;
+    width: 49%;
     height: 500px;
     background-color: #1F6B81;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     text-align: center;
+    margin-top: 1em;
   }
   .serversocial p {
     font-size: 19px;
@@ -263,6 +387,46 @@ p, button {
     height: 40%;
     text-align: center;
   }
+ /* ------------ NEWS SECTION ------------ */
+.news {
+    width: 100%;
+    height: auto;
+    padding: 14px 16px;
+    overflow: hidden;
+}
+.newsItem {
+    position: relative;
+    padding: 6px;
+    border: 1px solid black;
+    background-color: #033E4F;
+    margin: 10px 0px 0px;
+    text-align: left;
+}
+.newsItem .newsTitle {
+    margin-right: 190px;
+    margin-bottom: 2px;
+    font-size: 1.3em;
+}
+.newsItem .newsTitle a{
+    text-decoration: none;
+    color: white;
+}
+.newsItem .newsDate {
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    color: gray;
+    font-style: italic;
+}
+.newsItem .newsContent {
+    color: white;
+    font-size: 1.1em;
+}
+.newsItem .newsContent a {
+    color: white;
+    font-size: 1.1em;
+    
+}
   /* COLLAPSE FAQ */
   .collapsible {
     background-color: #333333;
@@ -469,9 +633,15 @@ p, button {
     .serverinfo {
         width: 100%;
         padding: 0;
+        margin: 0;
     }
     .serversocial {
         width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    .news {
+        padding: 0;
     }
 }
 @media screen and (max-width: 600px) {

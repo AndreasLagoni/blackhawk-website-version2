@@ -1,0 +1,213 @@
+<html <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Blackhawk</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="CSS Fil/maincss.css">
+        <link href="https://fonts.googleapis.com/css?family=Noto+Serif|Oswald" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        <link rel="icon" type="image/ico" href="billeder/icon.png">
+
+    </head>
+    <body>
+        <nav class="navigation">
+            <div class="navhome">
+                <a href="index.html" id="home"><li>BLACK<span style="color: #A72915">HAWK</span></li></a>
+            </div>
+            <div class="navrest">
+                <a href="about.html" id="about"><li>About</li></a>
+                <a href="leaderboard.html" id="leaderboard"><li>Leaderboard</li></a>
+                <a href="faq.html" id="faq"><li>FAQ</li></a>
+                <a href="achievements.html" id="achievements"><li>Achievements</li></a>
+            </div>
+        </nav>
+        <div class="bg">
+            <main class="insidebgachievements">
+                <div class="info">
+                    <h1>Let us introduce you to our achievement system</h1>
+                    <p>This is something we are really proud of. The system is automated and something that makes us stand out. 
+                        Let us introduce you to the system.
+                        Every person on the server will get these achievements, they are bound to each steam ID, so everyone will be able 
+                        to climb the achievement ladder. Some achievements will contain titles, which you can use ingame so show it off! 
+                        ALL of the achievements will give you points. There are a few achievements that are hidden and will only be available after you
+                        achieve it. <br>
+                        <br>Tier 1 is obviously the easiest
+                        <br>From tier 1 to tier 2 there is big jump!
+                        <br>From tier 2 to tier 3 there is an even bigger jump!
+                        <br>Unique achievements are achievements that we thought needed their own tier. Some of these will contain titles and some wont. Happy hunting!
+                    </p>
+                </div>
+                <div class="tierList" id="tierList">
+                    <button class="btn tier1 active" id="tierButton" onclick="tier1Function()">Tier 1</button>
+                    <button class="btn tier2" id="tierButton" onclick="tier2Function()">Tier 2</button>
+                    <button class="btn tier3" id="tierButton" onclick="tier3Function()">Tier 3</button>
+                    <button class="btn tierunique" id="tierButton" onclick="tierUFunction()">Uniques</button>
+                </div>
+                <div class="achievementList" id="achievementListTier1">
+                    <article class="achievementItem tier1">
+                        <div class="achievementExpand">
+                        <button><i class="fas fa-plus"></i></button>
+                        </div>
+                        <div class="achievementName">
+                            Grinding
+                        </div>
+                        <div class="achievementStatus">
+                            <i class="fas fa-check active"></i>
+                            <i class="fas fa-times"></i>
+                        </div>
+                    </article>
+                    <article class="achievementItem tier1">
+                            <div class="achievementExpand">
+                            <button><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="achievementName">
+                                Grinding
+                            </div>
+                            <div class="achievementStatus">
+                                <i class="fas fa-check active"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </article>
+                        <article class="achievementItem tier1">
+                                <div class="achievementExpand">
+                                <button><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="achievementName">
+                                    Grinding
+                                </div>
+                                <div class="achievementStatus">
+                                    <i class="fas fa-check active"></i>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </article>
+                </div>
+                <!--ACHIEVEMENT LIST FOR TIER 2 ACHIEVEMENTS-->
+                <div class="achievementList" id="achievementListTier2">
+                        <article class="achievementItem tier2">
+                            <div class="achievementExpand">
+                            <button><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="achievementName">
+                                Grinding
+                            </div>
+                            <div class="achievementStatus">
+                                <i class="fas fa-check active"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </article>
+                        <article class="achievementItem tier2">
+                                <div class="achievementExpand">
+                                <button><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="achievementName">
+                                    Grinding
+                                </div>
+                                <div class="achievementStatus">
+                                    <i class="fas fa-check active"></i>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </article>
+                            <article class="achievementItem tier2">
+                                    <div class="achievementExpand">
+                                    <button><i class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="achievementName">
+                                        Grinding
+                                    </div>
+                                    <div class="achievementStatus">
+                                        <i class="fas fa-check active"></i>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </article>
+                    </div>
+                    <!--ACHIEVEMENT LIST FOR TIER 3 ACHIEVEMENTS-->
+                <div class="achievementList" id="achievementListTier3">
+                        <article class="achievementItem tier3">
+                            <div class="achievementExpand">
+                            <button><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="achievementName">
+                                Grinding
+                            </div>
+                            <div class="achievementStatus">
+                                <i class="fas fa-check active"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </article>
+                        <article class="achievementItem tier3">
+                                <div class="achievementExpand">
+                                <button><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="achievementName">
+                                    Grinding
+                                </div>
+                                <div class="achievementStatus">
+                                    <i class="fas fa-check active"></i>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </article>
+                            <article class="achievementItem tier3">
+                                    <div class="achievementExpand">
+                                    <button><i class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="achievementName">
+                                        Grinding
+                                    </div>
+                                    <div class="achievementStatus">
+                                        <i class="fas fa-check active"></i>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </article>
+                    </div>
+                <!--ACHIEVEMENT LIST FOR UNIQUE ACHIEVEMENTS-->
+                <div class="achievementList" id="achievementListTierUnique">
+                        <article class="achievementItem tierUnique">
+                            <div class="achievementExpand">
+                            <button><i class="fas fa-plus"></i></button>
+                            </div>
+                            <div class="achievementName">
+                                Grinding
+                            </div>
+                            <div class="achievementStatus">
+                                <i class="fas fa-check active"></i>
+                                <i class="fas fa-times"></i>
+                            </div>
+                        </article>
+                        <article class="achievementItem tierUnique">
+                                <div class="achievementExpand">
+                                <button><i class="fas fa-plus"></i></button>
+                                </div>
+                                <div class="achievementName">
+                                    Grinding
+                                </div>
+                                <div class="achievementStatus">
+                                    <i class="fas fa-check active"></i>
+                                    <i class="fas fa-times"></i>
+                                </div>
+                            </article>
+                            <article class="achievementItem tierUnique">
+                                    <div class="achievementExpand">
+                                    <button><i class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="achievementName">
+                                        Grinding
+                                    </div>
+                                    <div class="achievementStatus">
+                                        <i class="fas fa-check active"></i>
+                                        <i class="fas fa-times"></i>
+                                    </div>
+                                </article>
+                    </div>
+            </main>
+        </div>
+        
+        
+        <script src="javascript.js" async defer></script>
+    </body>
+</html>

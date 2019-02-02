@@ -1,6 +1,49 @@
+// Get the container element
+var btnContainer = document.getElementById("tierList");
+
+// Get all buttons with class="btn" inside the container
+var btns = btnContainer.getElementsByClassName("btn");
+
+// Loop through the buttons and add the active class to the current/clicked button
+for (var i = 0; i < btns.length; i++) {
+  btns[i].addEventListener("click", function() {
+    var current = document.getElementsByClassName("active");
+    current[0].className = current[0].className.replace(" active", "");
+    this.className += " active";
+  });
+}
+// Get the achievement button list
+var achievementListTier1 = document.getElementById("achievementListTier1");
+var achievementListTier2 = document.getElementById("achievementListTier2");
+var achievementListTier3 = document.getElementById("achievementListTier3");
+var achievementListTierUnique = document.getElementById("achievementListTierUnique");
+
+function tier1Function() {
+  achievementListTier1.style.display ="flex"
+  achievementListTier3.style.display ="none"
+  achievementListTierUnique.style.display ="none"
+  achievementListTier2.style.display ="none"
+}
+function tier2Function() {
+  achievementListTier1.style.display ="none"
+  achievementListTier3.style.display ="none"
+  achievementListTierUnique.style.display ="none"
+  achievementListTier2.style.display ="flex"
+}
+function tier3Function() {
+  achievementListTier1.style.display ="none"
+  achievementListTier3.style.display ="flex"
+  achievementListTierUnique.style.display ="none"
+  achievementListTier2.style.display ="none"
+}
+function tierUFunction() {
+  achievementListTier1.style.display ="none"
+  achievementListTier3.style.display ="none"
+  achievementListTierUnique.style.display ="flex"
+  achievementListTier2.style.display ="none"
+}
 // Get the modal
 var modal = document.getElementById('indexModal');
-
 // Get the button that opens the modal
 var btn = document.getElementById("buttonModal");
 // When the user clicks on the button, open the modal 
@@ -23,20 +66,6 @@ function copyIpfunction() {
     /* Copy the text inside the text field */
     document.execCommand("copy");
   }
-var socket = io();
-
-socket.on("connect", function() {
-  socket.on("updateServerDetails", function(server) {
-    updateServerInfo(server);
-  });
-  socket.on("updateLeaderboard", function(leaderboard) {
-    updateLeaderboard(leaderboard);
-  });
-  socket.on("updateServerStatus", function(isOnline) {
-    updateServerStatus(isOnline);
-  });
-});
-
 // Get the container element
 var btnContainer = document.getElementById("leaderboardbutton");
 
@@ -51,7 +80,18 @@ for (var i = 0; i < btns.length; i++) {
     this.className += " active";
   });
 }
-
+var socket = io();
+socket.on("connect", function() {
+  socket.on("updateServerDetails", function(server) {
+    updateServerInfo(server);
+  });
+  socket.on("updateLeaderboard", function(leaderboard) {
+    updateLeaderboard(leaderboard);
+  });
+  socket.on("updateServerStatus", function(isOnline) {
+    updateServerStatus(isOnline);
+  });
+});
 // IS SERVER ONLINE OR OFFLINE
 function updateServerStatus(isOnline) {
   if (isOnline == true) {
